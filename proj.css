@@ -1,0 +1,56 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the Navigation Bar */
+nav {
+    position: fixed; /* Keeps the nav bar visible when scrolling */
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Keeps it above other content */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Style the Sections */
+section {
+    /* Use 100vh to make each section take up the full viewport height */
+    min-height: 100vh;
+    padding-top: 60px; /* To prevent content from hiding behind the fixed navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+}
+
+/* Give different sections different colors to distinguish them */
+#home {
+    background-color: #f0f0f0;
+}
+
+#about {
+    background-color: #e0f7fa;
+}
+
+#contact {
+    background-color: #fffde7;
+}
